@@ -1,53 +1,118 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="initial-scale=1.0, width=device-width">
-<title>Lyft - Become a driver</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;900&display=swap" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet" type="text/css">
-<script defer src="js/main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Step Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
-
 <body>
-	<div id="container">
-		<h1 class="hidden">Become a driver for Lyft</h1>
-		<main id="driverInfo">
-				<img
-					sizes="100vw"
-					srcset="
-					images/driver_paswwj_c_scale,w_320.jpg 320w,
-					images/driver_paswwj_c_scale,w_1162.jpg 1162w,
-					images/driver_paswwj_c_scale,w_1734.jpg 1734w,
-					images/driver_paswwj_c_scale,w_2023.jpg 2023w,
-					images/driver_paswwj_c_scale,w_2272.jpg 2272w,
-					images/driver_paswwj_c_scale,w_2560.jpg 2560w"
-					src="images/driver_paswwj_c_scale,w_2560.jpg"
-					alt="inside view of car"
-					id="hero">
-			<header id="mainHeader">
-				<img src="images/logo.svg" alt="lyft logo" id="logo">
-			</header>
-			<section id="signUp">
-			<h2>Make up to $35/hr<br> Driving Your Car</h2>
-			<form id="driverForm">
-				<h3>Apply Now</h3>
-				<p>Enter your info, and then download the Lyft app to create your driver profile</p>
-				<label for="fname">*First Name</label>
-				<input type="text" id="fname">
-				<label for="lname">*Last Name</label>
-				<input type="text" id="lname">
-				<label for="email">*Email</label>
-				<input type="email" id="email">
-				<label for="city">*City</label>
-				<input type="text" id="city">
-				<input id="submit" type="submit" value="BECOME A DRIVER">
-				<section id="feedback"><p>*Please fill out all required sections</p></section>
-			</form>
-			</section>			
-		</main>
-	</div>
+<div class="form-wrapper">
+    <div id="multistep-form" class="form" data-current-page="1" data-max-page="5">
+        <div class="form__header">
+            <h1>Find Your Perfect Car</h1>
+            <div class="progress-bar">
+                <div class="page-step active" data-page="1">1</div>
+                <div class="page-step" data-page="2">2</div>
+                <div class="page-step" data-page="3">3</div>
+                <div class="page-step" data-page="4">4</div>
+                <div class="page-step" data-page="5">5</div>
+            </div>
+        </div>
+
+        <form class="form__body">
+            
+<div class="form__page active" data-page="1">
+    <select name="carType" id="carType">
+        <option value="">Select Car Type</option>
+        <option value="sedan">Sedan</option>
+        <option value="suv">SUV</option>
+        <option value="coupe">Coupe</option>
+        <option value="truck">Truck</option>
+        <option value="convertible">Convertible</option>
+        <option value="van">Van</option>
+        <option value="hatchback">Hatchback</option>
+        <option value="wagon">Wagon</option>
+    </select>
+    <div class="form__buttons">
+        <button class="btn-form btn-next">Next</button>
+    </div>
+</div>
+
+            
+<!-- Page 2 -->
+<div class="form__page" data-page="2">
+    <label for="minYear">Minimum Year</label>
+    <select name="minYear" id="minYear">
+        <!-- Options will be populated by JavaScript -->
+    </select>
+
+    <label for="maxYear">Maximum Year</label>
+    <select name="maxYear" id="maxYear">
+        <!-- Options will be populated by JavaScript -->
+    </select>
+
+
+<label for="minPrice">Minimum Price</label>
+<input type="number" name="minPrice" id="minPrice" placeholder="Min Price">
+
+<label for="maxPrice">Maximum Price</label>
+<input type="number" name="maxPrice" id="maxPrice" placeholder="Max Price">
+
+
+    <div class="form__buttons">
+        <button class="btn-form btn-prev">Previous</button>
+        <button class="btn-form btn-next">Next</button>
+    </div>
+</div>
+
+
+            <!-- Page 3 -->
+            <div class="form__page" data-page="3">
+                <input type="text" placeholder="Body Style" />
+                <input type="text" placeholder="Mileage" />
+                <div class="form__buttons">
+                    <button class="btn-form btn-prev">Previous</button>
+                    <button class="btn-form btn-next">Next</button>
+                </div>
+            </div>
+          
+<!-- Page 4 Adjustments -->
+<div class="form__page" data-page="4">
+    <label for="color">Color</label>
+    <select name="color" id="color">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="black">Black</option>
+        <!-- Add other color options as needed -->
+    </select>
+    <!-- Color Preview -->
+    <span id="colorPreview" style="display: inline-block; width: 20px; height: 20px; border-radius: 50%; margin-left: 10px;"></span>
+    
+    <div class="form__buttons">
+        <button class="btn-form btn-prev">Previous</button>
+        <button class="btn-form btn-next">Next</button>
+    </div>
+</div>
+
+
+            <!-- Page 5: End -->
+            <div class="form__page" data-page="5">
+                <input type="text" placeholder="Name" />
+                <input type="text" placeholder="Email" />
+                <input type="text" placeholder="Phone" />
+                <div class="form__buttons">
+                    <button class="btn-form btn-prev">Previous</button>
+                    <button class="btn-form btn-submit" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="module" src="./js/main.js"></script>
 </body>
 </html>

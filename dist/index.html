@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Step Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="/index.47ca9330.css">
+</head>
+<body>
+<div class="form-wrapper">
+    <div id="multistep-form" class="form" data-current-page="1" data-max-page="5">
+        <div class="form__header">
+            <h1>Find Your Perfect Car</h1>
+            <div class="progress-bar">
+                <div class="page-step active" data-page="1">1</div>
+                <div class="page-step" data-page="2">2</div>
+                <div class="page-step" data-page="3">3</div>
+                <div class="page-step" data-page="4">4</div>
+                <div class="page-step" data-page="5">5</div>
+            </div>
+        </div>
+
+        <form class="form__body">
+            
+<div class="form__page active" data-page="1">
+    <select name="carType" id="carType">
+        <option value="">Select Car Type</option>
+        <option value="sedan">Sedan</option>
+        <option value="suv">SUV</option>
+        <option value="coupe">Coupe</option>
+        <option value="truck">Truck</option>
+        <option value="convertible">Convertible</option>
+        <option value="van">Van</option>
+        <option value="hatchback">Hatchback</option>
+        <option value="wagon">Wagon</option>
+    </select>
+    <div class="form__buttons">
+        <button class="btn-form btn-next">Next</button>
+    </div>
+</div>
+
+            
+<!-- Page 2 -->
+<div class="form__page" data-page="2">
+    <label for="minYear">Minimum Year</label>
+    <select name="minYear" id="minYear">
+        <!-- Options will be populated by JavaScript -->
+    </select>
+
+    <label for="maxYear">Maximum Year</label>
+    <select name="maxYear" id="maxYear">
+        <!-- Options will be populated by JavaScript -->
+    </select>
+
+
+<label for="minPrice">Minimum Price</label>
+<input type="number" name="minPrice" id="minPrice" placeholder="Min Price">
+
+<label for="maxPrice">Maximum Price</label>
+<input type="number" name="maxPrice" id="maxPrice" placeholder="Max Price">
+
+
+    <div class="form__buttons">
+        <button class="btn-form btn-prev">Previous</button>
+        <button class="btn-form btn-next">Next</button>
+    </div>
+</div>
+
+
+            <!-- Page 3 -->
+            <div class="form__page" data-page="3">
+                <input type="text" placeholder="Body Style">
+                <input type="text" placeholder="Mileage">
+                <div class="form__buttons">
+                    <button class="btn-form btn-prev">Previous</button>
+                    <button class="btn-form btn-next">Next</button>
+                </div>
+            </div>
+          
+<!-- Page 4 Adjustments -->
+<div class="form__page" data-page="4">
+    <label for="color">Color</label>
+    <select name="color" id="color">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="black">Black</option>
+        <!-- Add other color options as needed -->
+    </select>
+    <!-- Color Preview -->
+    <span id="colorPreview" style="border-radius: 50%; width: 20px; height: 20px; margin-left: 10px; display: inline-block"></span>
+    
+    <div class="form__buttons">
+        <button class="btn-form btn-prev">Previous</button>
+        <button class="btn-form btn-next">Next</button>
+    </div>
+</div>
+
+
+            <!-- Page 5: End -->
+            <div class="form__page" data-page="5">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone">
+                <div class="form__buttons">
+                    <button class="btn-form btn-prev">Previous</button>
+                    <button class="btn-form btn-submit" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/index.fbb3188c.js" defer=""></script>
+</body>
+</html>
