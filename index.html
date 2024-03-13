@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, width=device-width">
+<title>Lyft - Become a driver</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;900&display=swap" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script defer src="js/main.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<h1 class="hidden">Become a driver for Lyft</h1>
+		<main id="driverInfo">
+				<img
+					sizes="100vw"
+					srcset="
+					images/driver_paswwj_c_scale,w_320.jpg 320w,
+					images/driver_paswwj_c_scale,w_1162.jpg 1162w,
+					images/driver_paswwj_c_scale,w_1734.jpg 1734w,
+					images/driver_paswwj_c_scale,w_2023.jpg 2023w,
+					images/driver_paswwj_c_scale,w_2272.jpg 2272w,
+					images/driver_paswwj_c_scale,w_2560.jpg 2560w"
+					src="images/driver_paswwj_c_scale,w_2560.jpg"
+					alt="inside view of car"
+					id="hero">
+			<header id="mainHeader">
+				<img src="images/logo.svg" alt="lyft logo" id="logo">
+			</header>
+			<section id="signUp">
+			<h2>Make up to $35/hr<br> Driving Your Car</h2>
+			<form id="driverForm">
+				<h3>Apply Now</h3>
+				<p>Enter your info, and then download the Lyft app to create your driver profile</p>
+				<label for="fname">*First Name</label>
+				<input type="text" id="fname">
+				<label for="lname">*Last Name</label>
+				<input type="text" id="lname">
+				<label for="email">*Email</label>
+				<input type="email" id="email">
+				<label for="city">*City</label>
+				<input type="text" id="city">
+				<input id="submit" type="submit" value="BECOME A DRIVER">
+				<section id="feedback"><p>*Please fill out all required sections</p></section>
+			</form>
+			</section>			
+		</main>
+	</div>
+</body>
+</html>
