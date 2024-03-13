@@ -19,7 +19,7 @@ The core of this project is a multi-step form that dynamically displays one sect
 
 - **HTML5:** For structuring the form and its components.
 - **CSS3/SCSS:** For styling the form, with SCSS allowing for more organized, maintainable stylesheets.
-- **Vanilla JavaScript (ES6+):** Implements the form's dynamic behavior and OOP concepts without relying on external libraries.
+- **JavaScript (ES6+):** Implements the form's dynamic behavior and OOP concepts without relying on external libraries.
 
 
 ### Installation
@@ -27,7 +27,7 @@ The core of this project is a multi-step form that dynamically displays one sect
 1. Clone the repository to your local machine:
 
 - git clone https://github.com/hkpatel310/patel_harsh_patel_hit_oop_js.git
-- cd multi-step-form
+- cd patel_harsh_patel_hit_oop_js
   
 2. License
 - Distributed under the MIT License. See `LICENSE` for more information.
